@@ -1,9 +1,9 @@
-const { Sequelize } = require('sequelize');
-const { DataType } = require9('sequelize');
+const sequelize = require('../database/db');
+const { DataTypes } = require('sequelize');
 
-const User = require('./user')(sequelize);
-const Complaint = require('./complaint')(sequelize);
-const Response = require('./response')(sequelize);
+const User = require('./user')(sequelize, DataTypes);
+const Complaint = require('./complaint')(sequelize, DataTypes);
+const Response = require('./response')(sequelize, DataTypes);
 
 // Define associations
 Complaint.belongsTo(User, { foreignKey: 'studentId', as: 'student' });
