@@ -20,6 +20,7 @@
     "mysql2": "^3.10.3",
     "path": "^0.12.7",
     "sequelize": "^6.37.3",
-    "uglify-js": "^3.19.0"
+    "uglify-js": "^3.19.0",
+    "serverless-http": "^2.7.0"
   }
 }
