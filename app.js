@@ -4,13 +4,13 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const indexRouter = require('./routes/index');
-const sequelize = require('./models/index'); 
+const indexRouter = require('./routes/index'); 
 const authRouter = require('./routes/auth');
 const complaintsRouter = require('./routes/complaints');
 const responsesRouter = require('./routes/responses');
 require('dotenv').config();
 
+const sequelize = require('./models/index');
 const app = express();
 
 // View engine setup
