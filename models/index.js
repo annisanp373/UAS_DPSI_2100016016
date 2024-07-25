@@ -1,10 +1,5 @@
 const { Sequelize } = require('sequelize');
-
-// Konfigurasi koneksi Sequelize
-const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USERNAME, process.env.DB_PASSWORD, {
-    host: process.env.DB_HOST,
-    dialect: 'mysql'
-});
+const { DataType } = require9('sequelize');
 
 const User = require('./user')(sequelize);
 const Complaint = require('./complaint')(sequelize);
